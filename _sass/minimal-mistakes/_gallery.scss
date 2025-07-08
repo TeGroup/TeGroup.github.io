@@ -1,0 +1,62 @@
+.gallery-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  height: 80vh;  /* 关键，父容器必须有高度 */
+  position: relative;
+}
+
+.gallery-background {
+  width: 100%;
+  height: 70%;    /* 占父容器一半高 */
+  background: #e6cfe6;  /* 紫色背景 */
+  position: absolute;  /* 让它固定在容器顶部 */
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0; /* 可选，圆角只在上边 */
+  z-index: 1;
+}
+
+.gallery {
+  position: relative;
+  background: #fff;
+  width: 70%;
+  height: 70%;  /* 剩余一半 */
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  z-index: 2;
+  top: 60%;  /* 下移到父容器中下方 */
+  transform: translateY(-50%);
+  overflow: hidden;
+
+  .gallery-slider {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+
+    img {
+      flex: 0 0 100%;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
+
+    &.left { left: 10px; }
+    &.right { right: 10px; }
+  }
+}

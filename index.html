@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .container_header {
+      width: 80%;
+      height: 300px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      position: relative;
+      /* 为绝对定位做准备 */
+    }
+
+    .container_photobox {
+      width: 80%;
+      height: 400px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      position: relative;
+      /* 为绝对定位做准备 */
+    }
+
+    .container_researchbox {
+      width: 80%;
+      height: 400px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      position: relative;
+      /* 为绝对定位做准备 */
+    }
+
+    .container_newsbox {
+      width: 80%;
+      height: 400px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      position: relative;
+      /* 为绝对定位做准备 */
+    }
+
+    .text-box {
+      width: 40%;
+      position: absolute;
+      left: 0;
+      /* 靠左 */
+      top: 50%;
+      /* 垂直偏移到容器中间 */
+      transform: translateY(-50%);
+      /* 上移自身高度的一半，实现垂直居中 */
+      /* 文字水平居中 */
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+
+<body>
+  <div class="container_header">
+    <div class="text-box">
+      <p>Welcome to Ning's Group</p>
+    </div>
+  </div>
+
+  <div class="container_photobox">
+    <p>Here is our photo</p>
+  </div>
+
+  <div class="container_researchbox">
+    <p>Our research</p>
+  </div>
+
+<div class="outer-container">
+  <h3>News</h3>
+  <div class="news-wrapper">
+    <div id="newsContainer" class="news-container" data-news='[
+      {% for item in site.data.news %}
+        {
+          "content": "{{ item.content | escape }}",
+          "date": "{{ item.date | date: "%Y-%m-%d" }}"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]'></div>
+
+    <button class="nav-btn left">‹</button>
+    <button class="nav-btn right">›</button>
+  </div>
+</div>
+
+<div class="gallery-container">
+  <div class="gallery-background"></div>
+  <div class="gallery">
+    <div class="gallery-slider" id="gallerySlider" data-images='[
+      {% for item in site.data.gallery %}
+        "{{ item.url }}"{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]'>
+    </div>
+    <button class="gallery-btn left">‹</button>
+    <button class="gallery-btn right">›</button>
+  </div>
+</div>
+
+
+</div>
+  <script src="scripts/news.js"></script>
+  <script src="scripts/gallery.js"></script>
+</body>
+
+</html>

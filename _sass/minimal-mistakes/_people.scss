@@ -1,0 +1,41 @@
+.people-list {
+  width: 64%;
+  margin: 0 auto;   /* 容器居中 */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 一行4列 */
+  gap: 20px; /* 卡片间距 */
+}
+
+.person-card {
+  text-align: center;
+  font-family: 'CustomFont';
+  color: #333;
+
+  .person-avatar {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+
+  .person-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+  }
+
+  .person-gender {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 5px 0;
+  }
+
+  .person-description {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+  }
+}
+

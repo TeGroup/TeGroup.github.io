@@ -1,0 +1,40 @@
+.outer-container {
+  width: 80%;
+  height: 250px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative; // 保证内部定位不出问题
+
+.news-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  .news-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+
+    .news-item {
+      flex: 0 0 33.3333%;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+  }
+
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.left { left: 0; }
+    &.right { right: 0; }
+  }
+}
+
+}
