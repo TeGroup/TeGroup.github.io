@@ -1,7 +1,8 @@
 .bar-container {
   height: 45px;
   width: 80%;
-  background-color: #e6cfe6; // 淡紫色
+  max-width: $max-width;
+  background-color: $main_color; // 淡紫色
   margin: 20px auto; // 居中 + 上下间距
   display: flex;
   justify-content: center;
@@ -12,9 +13,9 @@
   .bar-text {
     width: 80%;
     text-align: left;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #fff;
     line-height: 45px; // 与背景一致，垂直居中
   }
 }

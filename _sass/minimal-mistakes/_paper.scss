@@ -1,0 +1,74 @@
+// Base layout
+body {
+  font-family: "CustomFont";
+  background: transparent;
+  color: #333;
+  margin: 0;
+}
+
+// Container for the paper list
+.conference-table {
+  width: 60%;
+  max-width: 720pt;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.paper-entry {
+  background: transparent;
+  margin-bottom: 0;
+  box-shadow: none;
+
+  > * {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 2px;
+  }
+
+  .authors {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 2px;
+
+    p {  /* 重点：去除p默认margin */
+      margin: 0;
+      line-height: 1.1;
+    }
+  }
+
+  .description {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 2px;
+    
+    p {
+      margin: 0;
+      line-height: 1.1;
+    }
+  }
+
+  .links {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    a {
+      margin-right: 0.7em;
+      color: #007acc;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

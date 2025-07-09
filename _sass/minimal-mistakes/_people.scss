@@ -1,5 +1,6 @@
 .people-list {
   width: 64%;
+  
   margin: 0 auto;   /* 容器居中 */
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 一行4列 */

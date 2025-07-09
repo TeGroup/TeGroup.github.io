@@ -1,16 +1,21 @@
-- name: Chenyu Lu
-  avatar: /assets/avatars/chenyulu.jpg
+- name: StudentA
+  avatar: /assets/avatars/a.jpg
   description: 2025.6~Now
   gender: she/her
   category: RA
-- name: Jiahao Zeng
-  avatar: /assets/avatars/jiahaozeng.jpg
+- name: StudentB
+  avatar: /assets/avatars/b.jpg
   description: 2024.9~Now
   gender: he/him
   category: PhD
-- name: Siyuan Wen
-  avatar: /assets/avatars/siyuanwen.jpg
+- name: StudentC
+  avatar: /assets/avatars/c.jpg
   description: 2024.9~Now
   gender: he/him
   category: PhD
+- name: Faculty
+  avatar: /assets/avatars/d.jpg
+  description: advisor
+  gender: she/her
+  category: Faculty
 

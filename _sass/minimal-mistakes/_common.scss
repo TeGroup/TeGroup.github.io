@@ -1,0 +1,46 @@
+.container_header {
+    width: 80%;
+    max-width: $max-width;
+    height: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffefd5;
+    position: relative;
+    /* 为绝对定位做准备 */
+}
+
+.container_photobox {
+    width: 80%;
+    height: 400px;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    position: relative;
+    /* 为绝对定位做准备 */
+}
+
+.container_researchbox {
+    width: 80%;
+    max-width: $max-width;
+    height: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: $constrast-color;
+    position: relative;
+    /* 为绝对定位做准备 */
+}
+
+
+.text-box {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    /* 靠左 */
+    top: 50%;
+    /* 垂直偏移到容器中间 */
+    transform: translateY(-50%);
+    /* 上移自身高度的一半，实现垂直居中 */
+    /* 文字水平居中 */
+    text-align: center;
+}

@@ -9,79 +9,14 @@ layout: default
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <style>
-    .container_header {
-      width: 80%;
-      height: 300px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-      position: relative;
-      /* 为绝对定位做准备 */
-    }
 
-    .container_photobox {
-      width: 80%;
-      height: 400px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-      position: relative;
-      /* 为绝对定位做准备 */
-    }
-
-    .container_researchbox {
-      width: 80%;
-      height: 400px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-      position: relative;
-      /* 为绝对定位做准备 */
-    }
-
-    .container_newsbox {
-      width: 80%;
-      height: 400px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-      position: relative;
-      /* 为绝对定位做准备 */
-    }
-
-    .text-box {
-      width: 40%;
-      position: absolute;
-      left: 0;
-      /* 靠左 */
-      top: 50%;
-      /* 垂直偏移到容器中间 */
-      transform: translateY(-50%);
-      /* 上移自身高度的一半，实现垂直居中 */
-      /* 文字水平居中 */
-      text-align: center;
-    }
-
-    h1 {
-      text-align: center;
-    }
-  </style>
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 
 <body>
   <div class="container_header">
     <div class="text-box">
-      <p>Welcome to Ning's Group</p>
+      <p>Welcome to <strong>Ning's Lab</strong>, ...</p>
     </div>
   </div>
 
@@ -90,11 +25,17 @@ layout: default
   </div>
 
   <div class="container_researchbox">
-    <p>Our research</p>
+    <p>Our research focus on ...</p>
   </div>
 
 <div class="outer-container">
-  <h3>News</h3>
+  <h2>News</h2>
+    <button class="nav-btn left">
+      <img src="/assets/icons/button-left.svg" alt="left" width="44" height="44" />
+    </button>
+    <button class="nav-btn right">
+      <img src="/assets/icons/button-right.svg" alt="right" width="44" height="44" />
+    </button>
   <div class="news-wrapper">
     <div id="newsContainer" class="news-container" data-news='[
       {% for item in site.data.news %}
@@ -105,12 +46,17 @@ layout: default
       {% endfor %}
     ]'></div>
 
-    <button class="nav-btn left">‹</button>
-    <button class="nav-btn right">›</button>
+
   </div>
 </div>
 
 <div class="gallery-container">
+        <button class="gallery-btn left">
+      <img src="/assets/icons/button-grey-left.svg" alt="left" width="44" height="44" />
+    </button>
+    <button class="gallery-btn right">
+      <img src="/assets/icons/button-grey-right.svg" alt="right" width="44" height="44" />
+    </button>
   <div class="gallery-background"></div>
   <div class="gallery">
     <div class="gallery-slider" id="gallerySlider" data-images='[
@@ -119,8 +65,6 @@ layout: default
       {% endfor %}
     ]'>
     </div>
-    <button class="gallery-btn left">‹</button>
-    <button class="gallery-btn right">›</button>
   </div>
 </div>
 

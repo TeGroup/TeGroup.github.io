@@ -4,11 +4,27 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative; // 保证内部定位不出问题
+  
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.left { left: 0; }
+    &.right { right: 0; }
+  }
 
 .news-wrapper {
   position: relative;
   overflow: hidden;
-
+  width: 80%;
+  margin: 0 auto;
   .news-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -21,20 +37,9 @@
     }
   }
 
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
 
-    &.left { left: 0; }
-    &.right { right: 0; }
-  }
 }
+
+
 
 }

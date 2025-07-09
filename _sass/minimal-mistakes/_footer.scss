@@ -4,15 +4,15 @@
 
 .page__footer {
   @include clearfix;
-  float: inline-start;
-  margin-inline: 0;
-  width: 100%;
-  margin-top: 3em;
+  float: none;
+  margin: 3em auto 0 auto;
+  width: 80%;
+  max-width: $max-width;
   color: $muted-text-color;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
-  -webkit-animation-delay: 0.45s;
-  animation-delay: 0.45s;
+  // -webkit-animation: $intro-transition;
+  // animation: $intro-transition;
+  // -webkit-animation-delay: 0.45s;
+  // animation-delay: 0.45s;
   background-color: $footer-background-color;
 
   footer {
@@ -45,11 +45,24 @@
 }
 
 .page__footer-copyright {
+  width: 80%;
   font-family: $global-font-family;
   font-size: $type-size-7;
 }
 
+.page__footer-bottom {
+  width: 80%;
+  max-width: 1200px;
+  height: 20pt;
+  background-color: $main-color;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
 .page__footer-follow {
+  width: 80%;
   ul {
     margin: 0;
     padding: 0;

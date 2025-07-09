@@ -1,7 +1,25 @@
-- title: Test
-  authors: Test
-  info: Test
-  categories: conference
-  links: 
-    - pdf: pdflink
-    - code: null
+- title: "Awesome Paper on Conference"
+  authors: "John Doe, **Jane Smith**"
+  description: "SomeConf, 2023"
+  type: conference
+  links:
+    paper: "https://arxiv.org/abs/1234.5678"
+    code: "https://github.com/example/ai-paper"
+    slide: "https://example.com/slides.pdf"
+    video: "https://youtube.com/examplevideo"
+
+- title: "Another Research Work on Journal"
+  authors: "Alice Chen, Bob Lee"
+  description: "SomeTrans, 2023"
+  type: journal
+  links:
+    paper: "https://arxiv.org/abs/9876.5432"
+    code: "https://github.com/example/another-paper"
+
+- title: "Another Research Work on Conference"
+  authors: "Alice Chen, Bob Lee"
+  description: "AnoConf, 2024"
+  type: conference
+  links:
+    paper: "https://arxiv.org/abs/9876.5432"
+
