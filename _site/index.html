@@ -10,15 +10,15 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Nings’Lab</title>
+<!-- begin _includes/seo.html --><title>Ning’s Lab</title>
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Nings'Lab">
-<meta property="og:title" content="Nings’Lab">
+<meta property="og:site_name" content="Ning's Lab">
+<meta property="og:title" content="Ning’s Lab">
 <meta property="og:url" content="http://localhost:4000/">
 
 
@@ -62,7 +62,7 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Nings'Lab Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Ning's Lab Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -102,7 +102,7 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          Nings'Lab
+          Ning's Lab
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
@@ -119,22 +119,10 @@
               >People</a>
             </li><li class="masthead__menu-item">
               <a
-                href="/projects/"
-                
-                
-              >Projects</a>
-            </li><li class="masthead__menu-item">
-              <a
                 href="/publication/"
                 
                 
               >Publication</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/teach/"
-                
-                
-              >Teaching</a>
             </li><li class="masthead__menu-item">
               <a
                 href="/oppotunity/"
@@ -152,6 +140,20 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname.replace(/\/$/, ''); // 去掉结尾斜杠
+    const navLinks = document.querySelectorAll('.greedy-nav .visible-links a');
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute('href').replace(/\/$/, '');
+      if (linkPath === currentPath || (linkPath === '' && currentPath === '/')) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
 
 
     <div class="initial-content">
@@ -181,16 +183,16 @@
     <p>Our research focus on ...</p>
   </div>
 
-<div class="outer-container">
-  <h2>News</h2>
+  <div class="outer-container">
+    <h2>News</h2>
     <button class="nav-btn left">
       <img src="/assets/icons/button-left.svg" alt="left" width="44" height="44" />
     </button>
     <button class="nav-btn right">
       <img src="/assets/icons/button-right.svg" alt="right" width="44" height="44" />
     </button>
-  <div class="news-wrapper">
-    <div id="newsContainer" class="news-container" data-news='[
+    <div class="news-wrapper">
+      <div id="newsContainer" class="news-container" data-news='[
       
         {
           "content": "Hello.",
@@ -213,21 +215,19 @@
         }
       
     ]'></div>
-
-
+    </div>
   </div>
-</div>
 
-<div class="gallery-container">
-        <button class="gallery-btn left">
+  <div class="gallery-container">
+    <button class="gallery-btn left">
       <img src="/assets/icons/button-grey-left.svg" alt="left" width="44" height="44" />
     </button>
     <button class="gallery-btn right">
       <img src="/assets/icons/button-grey-right.svg" alt="right" width="44" height="44" />
     </button>
-  <div class="gallery-background"></div>
-  <div class="gallery">
-    <div class="gallery-slider" id="gallerySlider" data-images='[
+    <div class="gallery-background"></div>
+    <div class="gallery">
+      <div class="gallery-slider" id="gallerySlider" data-images='[
       
         "/assets/gallery/image1.jpg",
       
@@ -236,12 +236,9 @@
         "/assets/gallery/image3.jpg"
       
     ]'>
+      </div>
     </div>
   </div>
-</div>
-
-
-</div>
   <script src="scripts/news.js"></script>
   <script src="scripts/gallery.js"></script>
 </body>
@@ -269,7 +266,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Nings'Lab</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Ning's Lab</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
        
       </footer>

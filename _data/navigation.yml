@@ -4,11 +4,7 @@ main:
     url: /
   - title: "People"
     url: /people/
-  - title: "Projects"
-    url: /projects/
   - title: "Publication"
     url: /publication/
-  - title: "Teaching"
-    url: /teach/
   - title: "Oppotunity"
     url: /oppotunity/ 

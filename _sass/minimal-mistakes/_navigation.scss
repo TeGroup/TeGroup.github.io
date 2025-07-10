@@ -323,6 +323,12 @@
   }
 }
 
+.greedy-nav .visible-links .active {
+  font-weight: bold;
+  color: $constrast-color; // 可改为你想要的颜色
+}
+
+
 .no-js {
   .greedy-nav {
     .visible-links {

@@ -52,6 +52,7 @@
    Other
    ========================================================================== */
 /*custom*/
+/*$constrast-color: #ffefd5;*/
 /* Mixins and functions */
 /* Magnific Popup CSS */
 .mfp-counter {
@@ -1947,7 +1948,7 @@ blockquote.notice--danger {
   margin-inline: auto;
   padding: 1em;
   max-width: 60%;
-  background-color: #8b72be;
+  background-color: #000080;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2274,7 +2275,7 @@ blockquote.notice--danger {
   padding: 5px;
   border: 1px solid rgb(241.7, 242.5, 243.1);
   border-radius: 4px;
-  background: #8b72be;
+  background: #000080;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -2320,6 +2321,11 @@ blockquote.notice--danger {
 }
 .greedy-nav .hidden-links li:last-child {
   border-bottom: none;
+}
+
+.greedy-nav .visible-links .active {
+  font-weight: bold;
+  color: #c6e2ff;
 }
 
 .no-js .greedy-nav .visible-links {
@@ -2600,7 +2606,7 @@ blockquote.notice--danger {
   width: 80%;
   max-width: 1200px;
   height: 20pt;
-  background-color: #8b72be;
+  background-color: #000080;
   margin: 0 auto;
   padding: 0;
 }
@@ -3145,7 +3151,7 @@ figure.highlight pre.highlight {
 .gallery-background {
   width: 100%;
   height: 70%;
-  background: #8b72be;
+  background: #000080;
   position: absolute;
   top: 0;
   left: 0;
@@ -3182,7 +3188,7 @@ figure.highlight pre.highlight {
   height: 45px;
   width: 80%;
   max-width: 1200px;
-  background-color: #8b72be;
+  background-color: #000080;
   margin: 20px auto;
   display: flex;
   justify-content: center;
@@ -3307,7 +3313,7 @@ body {
   height: 300px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #ffefd5;
+  background-color: #c6e2ff;
   position: relative;
   /* 为绝对定位做准备 */
 }
@@ -3329,7 +3335,7 @@ body {
   height: 400px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #ffefd5;
+  background-color: #c6e2ff;
   position: relative;
   /* 为绝对定位做准备 */
 }

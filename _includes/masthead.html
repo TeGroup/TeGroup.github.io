@@ -37,3 +37,17 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname.replace(/\/$/, ''); // 去掉结尾斜杠
+    const navLinks = document.querySelectorAll('.greedy-nav .visible-links a');
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute('href').replace(/\/$/, '');
+      if (linkPath === currentPath || (linkPath === '' && currentPath === '/')) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+

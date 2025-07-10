@@ -28,16 +28,16 @@ layout: default
     <p>Our research focus on ...</p>
   </div>
 
-<div class="outer-container">
-  <h2>News</h2>
+  <!-- <div class="outer-container">
+    <h2>News</h2>
     <button class="nav-btn left">
       <img src="/assets/icons/button-left.svg" alt="left" width="44" height="44" />
     </button>
     <button class="nav-btn right">
       <img src="/assets/icons/button-right.svg" alt="right" width="44" height="44" />
     </button>
-  <div class="news-wrapper">
-    <div id="newsContainer" class="news-container" data-news='[
+    <div class="news-wrapper">
+      <div id="newsContainer" class="news-container" data-news='[
       {% for item in site.data.news %}
         {
           "content": "{{ item.content | escape }}",
@@ -45,32 +45,27 @@ layout: default
         }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ]'></div>
+    </div>
+  </div> -->
 
-
-  </div>
-</div>
-
-<div class="gallery-container">
-        <button class="gallery-btn left">
+  <div class="gallery-container">
+    <button class="gallery-btn left">
       <img src="/assets/icons/button-grey-left.svg" alt="left" width="44" height="44" />
     </button>
     <button class="gallery-btn right">
       <img src="/assets/icons/button-grey-right.svg" alt="right" width="44" height="44" />
     </button>
-  <div class="gallery-background"></div>
-  <div class="gallery">
-    <div class="gallery-slider" id="gallerySlider" data-images='[
+    <div class="gallery-background"></div>
+    <div class="gallery">
+      <div class="gallery-slider" id="gallerySlider" data-images='[
       {% for item in site.data.gallery %}
         "{{ item.url }}"{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ]'>
+      </div>
     </div>
   </div>
-</div>
-
-
-</div>
-  <script src="scripts/news.js"></script>
+  <!-- <script src="scripts/news.js"></script> -->
   <script src="scripts/gallery.js"></script>
 </body>
 

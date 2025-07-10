@@ -10,14 +10,14 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>oppotunity - Nings’Lab</title>
+<!-- begin _includes/seo.html --><title>oppotunity - Ning’s Lab</title>
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Nings'Lab">
+<meta property="og:site_name" content="Ning's Lab">
 <meta property="og:title" content="oppotunity">
 <meta property="og:url" content="http://localhost:4000/oppotunity/">
 
@@ -52,7 +52,7 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Nings'Lab Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Ning's Lab Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -92,7 +92,7 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          Nings'Lab
+          Ning's Lab
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
@@ -109,22 +109,10 @@
               >People</a>
             </li><li class="masthead__menu-item">
               <a
-                href="/projects/"
-                
-                
-              >Projects</a>
-            </li><li class="masthead__menu-item">
-              <a
                 href="/publication/"
                 
                 
               >Publication</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/teach/"
-                
-                
-              >Teaching</a>
             </li><li class="masthead__menu-item">
               <a
                 href="/oppotunity/"
@@ -142,6 +130,20 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname.replace(/\/$/, ''); // 去掉结尾斜杠
+    const navLinks = document.querySelectorAll('.greedy-nav .visible-links a');
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute('href').replace(/\/$/, '');
+      if (linkPath === currentPath || (linkPath === '' && currentPath === '/')) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
 
 
     <div class="initial-content">
@@ -149,32 +151,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 
 <body>
-  <div class="container_header">
-    <div class="text-box">
-      <p>Do research with us.</p>
+    <div class="container_header">
+        <div class="text-box">
+            <p>Do research with us.</p>
+        </div>
     </div>
-  </div>
-
-  <div class="bar-container">
-  <div class="bar-text">
-    OPPOTUNITY
-  </div>
-  </div>
-
-
-</div>
+    <div class="bar-container">
+        <div class="bar-text">
+            OPPOTUNITY
+        </div>
+    </div>
 </body>
 
 </html>
-
-
       
     </div>
 
@@ -197,7 +193,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Nings'Lab</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Ning's Lab</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
        
       </footer>
