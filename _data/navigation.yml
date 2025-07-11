@@ -2,9 +2,11 @@
 main:
   - title: "About"
     url: /
-  - title: "People"
+  - title: "Team"
     url: /people/
   - title: "Publication"
     url: /publication/
+  - title: "Biography"
+    url: /biography/
   - title: "Oppotunity"
     url: /oppotunity/ 

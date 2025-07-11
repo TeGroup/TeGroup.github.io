@@ -38,14 +38,14 @@ body {
     color: #444;
     margin-bottom: 2px;
 
-    p {  /* 重点：去除p默认margin */
+    p {  
       margin: 0;
       line-height: 1.1;
     }
   }
 
   .description {
-    font-style: italic;
+    /*font-family: Georgia, serif;*/
     font-weight: 300;
     font-size: 16px;
     color: #666;

@@ -2325,7 +2325,7 @@ blockquote.notice--danger {
 
 .greedy-nav .visible-links .active {
   font-weight: bold;
-  color: #c6e2ff;
+  color: #eeeeee;
 }
 
 .no-js .greedy-nav .visible-links {
@@ -3126,7 +3126,7 @@ figure.highlight pre.highlight {
   padding: 0;
   width: 80%;
   max-width: 1200px;
-  height: 80vh; /* 关键，父容器必须有高度 */
+  height: 800px; /* 关键，父容器必须有高度 */
   position: relative;
 }
 .gallery-container .gallery-btn {
@@ -3150,7 +3150,7 @@ figure.highlight pre.highlight {
 
 .gallery-background {
   width: 100%;
-  height: 70%;
+  height: 560px;
   background: #000080;
   position: absolute;
   top: 0;
@@ -3162,7 +3162,7 @@ figure.highlight pre.highlight {
   position: relative;
   background: #fff;
   width: 60%;
-  height: 60%; /* 剩余一半 */
+  height: 480px; /* 剩余一半 */
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -3194,7 +3194,7 @@ figure.highlight pre.highlight {
   justify-content: center;
   align-items: center;
   position: relative;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 .bar-container .bar-text {
   width: 80%;
@@ -3278,12 +3278,12 @@ body {
   color: #444;
   margin-bottom: 2px;
 }
-.paper-entry .authors p { /* 重点：去除p默认margin */
+.paper-entry .authors p {
   margin: 0;
   line-height: 1.1;
 }
 .paper-entry .description {
-  font-style: italic;
+  /*font-family: Georgia, serif;*/
   font-weight: 300;
   font-size: 16px;
   color: #666;
@@ -3312,8 +3312,8 @@ body {
   max-width: 1200px;
   height: 300px;
   margin: 0 auto;
-  padding: 2rem;
-  background-color: #c6e2ff;
+  padding: 0;
+  background-color: #eeeeee;
   position: relative;
   /* 为绝对定位做准备 */
 }
@@ -3335,21 +3335,16 @@ body {
   height: 400px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #c6e2ff;
+  background-color: #eeeeee;
   position: relative;
-  /* 为绝对定位做准备 */
 }
 
 .text-box {
   width: 40%;
   position: absolute;
   left: 0;
-  /* 靠左 */
   top: 50%;
-  /* 垂直偏移到容器中间 */
   transform: translateY(-50%);
-  /* 上移自身高度的一半，实现垂直居中 */
-  /* 文字水平居中 */
   text-align: center;
 }
 

@@ -1,25 +1,112 @@
-- title: "Awesome Paper on Conference"
-  authors: "John Doe, **Jane Smith**"
-  description: "SomeConf, 2023"
+- title: "AoI-aware Federated Unlearning for Streaming Data with Online Client Selection and Pricing"
+  authors: "Y. Cui, **N. Ding**, and M. Cheung"
+  description: "IEEE International Conference on Computer Communications (INFOCOM), 2025. (Acceptance rate 18.7%, CCF A)"
   type: conference
   links:
-    paper: "https://arxiv.org/abs/1234.5678"
-    code: "https://github.com/example/ai-paper"
-    slide: "https://example.com/slides.pdf"
-    video: "https://youtube.com/examplevideo"
+    paper: "https://infocom2025.ieee-infocom.org/program/accepted-paper-list-main-conference"
 
-- title: "Another Research Work on Journal"
-  authors: "Alice Chen, Bob Lee"
-  description: "SomeTrans, 2023"
+- title: "Incentivized Federated Learning and Unlearning"
+  authors: "**N. Ding**, Z. Sun, E. Wei, and R. Berry"
+  description: "IEEE Transactions on Mobile Computing (TMC), 2025. (CCF A, JCR Q1)"
   type: journal
   links:
-    paper: "https://arxiv.org/abs/9876.5432"
-    code: "https://github.com/example/another-paper"
+    paper: "https://arxiv.org/pdf/2308.12502"
 
-- title: "Another Research Work on Conference"
-  authors: "Alice Chen, Bob Lee"
-  description: "AnoConf, 2024"
+- title: "OSTOR: Online Scheduling Framework for Trading Continuous Queries"
+  authors: "J. Cheng, **N. Ding**, J. C.S. Lui, and J. Huang"
+  description: "IEEE International Conference on Data Engineering (ICDE), 2025."
   type: conference
   links:
-    paper: "https://arxiv.org/abs/9876.5432"
+    paper: "https://www.cse.cuhk.edu.hk/~cslui/PUBLICATION/ICDE25.pdf"
+
+- title: "Incentive Mechanism Design for Federated Learning with Dynamic Network Pricing"
+  authors: "**N. Ding**, L. Gao, and J. Huang"
+  description: "IEEE Transactions on Mobile Computing (TMC), 2025."
+  type: journal
+  links:
+    paper: "https://ieeexplore.ieee.org/abstract/document/10909360"
+
+- title: "An Overview on Economic Analysis of Internet of Everything"
+  authors: "**N. Ding**, X. Ouyang, L. Gao, J. Huang, and G. Xing"
+  description: "IEEE Communications Surveys & Tutorials (COMST), 2025. (IF=34.4, JCR Q1)"
+  type: journal
+  links:
+    paper: "https://ieeexplore.ieee.org/abstract/document/10947468"
+
+- title: "Continuous Query-based Data Trading"
+  authors: "J. Cheng, **N. Ding**, J. C.S. Lui, and J. Huang"
+  description: "ACM SIGMETRICS, 2024. (Acceptance rate 10%, CCF B)"
+  type: conference
+  links:
+    paper: "https://dl.acm.org/doi/abs/10.1145/3652963.3655050"
+
+- title: "Strategic Data Revocation in Federated Unlearning"
+  authors: "**N. Ding**, E. Wei, and R. Berry"
+  description: "IEEE International Conference on Computer Communications (INFOCOM), 2024. (Acceptance rate 19.6%, CCF A)"
+  type: conference
+  links:
+    paper: "https://ieeexplore.ieee.org/abstract/document/10621201"
+
+- title: "Incentive Mechanism Design for Federated Learning and Unlearning"
+  authors: "**N. Ding**, Z. Sun, E. Wei, and R. Berry"
+  description: "ACM International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc), 2023. (Acceptance rate 21.9%, CCF B)"
+  type: conference
+  links:
+    paper: "https://dl.acm.org/doi/abs/10.1145/3565287.3610269"
+
+- title: "Joint Participation Incentive and Network Pricing Design for Federated Learning"
+  authors: "**N. Ding**, L. Gao, and J. Huang"
+  description: "IEEE International Conference on Computer Communications (INFOCOM), 2023. (Acceptance rate 19.2%, CCF A)"
+  type: conference
+  links:
+    paper: "https://ieeexplore.ieee.org/abstract/document/10229084"
+
+- title: "Optimal Pricing Design for Coordinated and Uncoordinated IoT Networks"
+  authors: "**N. Ding**, L. Gao, and J. Huang"
+  description: "IEEE Transactions on Mobile Computing (TMC), 2022. (CCF A, JCR Q1)"
+  type: journal
+  links:
+    paper: "https://ieeexplore.ieee.org/document/9901393"
+
+- title: "Optimal Pricing Under Vertical and Horizontal Interaction Structures for IoT Networks"
+  authors: "**N. Ding**, L. Gao, J. Huang, Xin Li, and Xin Chen"
+  description: "IEEE International Conference on Computer Communications (INFOCOM), 2022. (Acceptance rate 19.9%, CCF A, collaborated with Huawei)"
+  type: conference
+  links:
+    paper: "https://ieeexplore.ieee.org/document/9796826"
+
+- title: "Optimal Incentive and Load Design for Distributed Coded Machine Learning"
+  authors: "**N. Ding**, Z. Fang, L. Duan, and J. Huang"
+  description: "IEEE Journal on Selected Areas in Communications (JSAC), vol. 39, no. 7, pp. 2090-2104, Jul. 2021. (CCF A, JCR Q1)"
+  type: journal
+  links:
+    paper: "https://ieeexplore.ieee.org/document/9433428"
+
+- title: "Optimal Contract Design for Efficient Federated Learning With Multi-Dimensional Private Information"
+  authors: "**N. Ding**, Z. Fang, and J. Huang"
+  description: "IEEE Journal on Selected Areas in Communications (JSAC), vol. 39, no. 1, pp. 186-200, Jan. 2021. (CCF A, JCR Q1)"
+  type: journal
+  links:
+    paper: "https://ieeexplore.ieee.org/document/9252911"
+
+- title: "Incentive Mechanism Design for Distributed Coded Machine Learning"
+  authors: "**N. Ding**, Z. Fang, L. Duan, and J. Huang"
+  description: "IEEE International Conference on Computer Communications (INFOCOM), 2021. (Acceptance rate 19.9%, CCF A)"
+  type: conference
+  links:
+    paper: "https://ieeexplore.ieee.org/abstract/document/9488672"
+
+- title: "Information Disclosure Game on Sharing Platforms"
+  authors: "**N. Ding**, Z. Fang, and J. Huang"
+  description: "IEEE Global Communications Conference (GLOBECOM), 2020."
+  type: conference
+  links:
+    paper: "https://ieeexplore.ieee.org/document/9322642"
+
+- title: "Incentive Mechanism Design for Federated Learning with Multi-Dimensional Private Information"
+  authors: "**N. Ding**, Z. Fang, and J. Huang"
+  description: "International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (WiOpt), 2020."
+  type: conference
+  links:
+    paper: "https://ieeexplore.ieee.org/document/9155318"
 

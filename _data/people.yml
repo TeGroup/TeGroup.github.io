@@ -1,21 +1,37 @@
-- name: StudentA
-  avatar: /assets/avatars/a.jpg
-  description: 2025.6~Now
-  gender: she/her
-  category: RA
-- name: StudentB
-  avatar: /assets/avatars/b.jpg
-  description: 2024.9~Now
-  gender: he/him
-  category: PhD
-- name: StudentC
-  avatar: /assets/avatars/c.jpg
-  description: 2024.9~Now
-  gender: he/him
-  category: PhD
-- name: Faculty
-  avatar: /assets/avatars/d.jpg
+- name: NingNing Ding
+  avatar: /assets/avatars/ningningding_bio.jpg
   description: advisor
-  gender: she/her
   category: Faculty
+- name: JiaHao Zeng
+  avatar: /assets/avatars/jiahaozeng.jpg
+  description: 2024.9~Now
+  category: PhD
+- name: Siyuan Wen
+  avatar: /assets/avatars/siyuanwen.jpg
+  description: 2024.9~Now
+  category: PhD
+- name: Chenyu Lu
+  avatar: /assets/avatars/chenyulu.jpg
+  description: 2025.6~Now
+  category: RA
+- name: Chenyu Gong
+  avatar: /assets/avatars/chenyugong.jpg
+  description: Co-supervise
+  category: PhD
+- name: YinZhi Liu
+  avatar: /assets/avatars/yinzhiliu.jpg
+  description: Co-supervise
+  category: PhD
+- name: Yaohui Wu
+  avatar: /assets/avatars/yaohuiwu.jpg
+  description: 2025.9～Now
+  category: PhD
+- name: Zhihui
+  avatar: /assets/avatars/chenyulu.jpg
+  description: 2025.9～Now
+  category: PhD
+- name: Junyi Li
+  avatar: /assets/avatars/junyili.jpg
+  description: 2025.9~Now
+  category: PhD
 
