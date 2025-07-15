@@ -3,7 +3,7 @@
   description: "IEEE International Conference on Computer Communications (INFOCOM), 2025. (Acceptance rate 18.7%, CCF A)"
   type: conference
   links:
-    paper: "https://infocom2025.ieee-infocom.org/program/accepted-paper-list-main-conference"
+    
 
 - title: "Incentivized Federated Learning and Unlearning"
   authors: "**N. Ding**, Z. Sun, E. Wei, and R. Berry"

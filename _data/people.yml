@@ -26,12 +26,15 @@
   avatar: /assets/avatars/yaohuiwu.jpg
   description: 2025.9～Now
   category: PhD
-- name: Zhihui
-  avatar: /assets/avatars/chenyulu.jpg
+- name: Zhihui Li
+  avatar: /assets/avatars/zhihuili.jpg
   description: 2025.9～Now
   category: PhD
 - name: Junyi Li
   avatar: /assets/avatars/junyili.jpg
   description: 2025.9~Now
   category: PhD
-
+- name: YanZhi Jin
+  avatar: /assets/avatars/yanzhijin.jpg
+  description: 2025.7~Now
+  category: RA

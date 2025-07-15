@@ -1,21 +1,36 @@
 <div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+  <div class="about-grid-container">
+    <div class="about-container">
+      <div class="about-title-container">
+        <div class="about-title-text">About us</div>
+        <div class="about-title-line"></div>
+      </div>
+      <div class="about-content">
+        <p>We are the xxx group at the HKUST(GZ). The group was established in 2024.</p>
+      </div>
+    </div>
+    <div class="about-container">
+      <div class="about-title-container">
+        <div class="about-title-text">Get in Touch</div>
+        <div class="about-title-line"></div>
+      </div>
+      <div class="about-content">
+        <p>
+          <strong>Address</strong>: No.1 Du Xue Rd, Nansha District, Guangzhou<br>
+          <strong>Email</strong>:
+          <a href="mailto:ningningding@hkustgz.edu.cn">ningningding@hkustgz.edu.cn</a>
+        </p>
 
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+      </div>
+    </div>
 
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
+    <div class="about-container">
+      <div class="about-title-container">
+        <div class="about-title-line"></div>
+      </div>
+      <div class="about-content">
+        <img src="/assets/icons/hkustgz.png" alt="School Logo" class="about-logo" />
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>

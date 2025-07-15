@@ -82,7 +82,7 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
-
+<div class="container_top"></div>
   </head>
 
   <body class="layout--default" dir="ltr">
@@ -116,7 +116,7 @@
                 href="/people/"
                 
                 
-              >Team</a>
+              >People</a>
             </li><li class="masthead__menu-item">
               <a
                 href="/publication/"
@@ -176,14 +176,19 @@
 
 <body>
   <div class="container_header">
-    <div class="text-box">
-      <p>Welcome to <strong>Ning's Lab</strong>, ...</p>
-    </div>
+      <div class="container_bak"></div>
+      <div class="diamond-pattern-overlay"></div>
+      <div class="text_wrapper">
+        <div class="text-intro"><strong>Welcome to</strong></div>
+        <div class="text-subtitle"><strong>Ning's Lab</strong></div>
+        <div class="text-desc">Research spans artificial intelligence, network systems, and network economics. </div>
+      </div>
   </div>
 
   <div class="container_photobox">
-    <p>Here is our photo</p>
+    <img src="/assets/gallery/index.jpg" alt="Lab Photo" class="lab-photo" />
   </div>
+
 
   <div class="container_researchbox">
     <p>Our research focus on ...</p>
@@ -199,26 +204,6 @@
     </button>
     <div class="news-wrapper">
       <div id="newsContainer" class="news-container" data-news='[
-      
-        {
-          "content": "Hello.",
-          "date": "2026-07-05"
-        },
-      
-        {
-          "content": "Here are News.",
-          "date": "2026-07-06"
-        },
-      
-        {
-          "content": "MeowMeow.",
-          "date": "2026-07-07"
-        },
-      
-        {
-          "content": "HKUST.",
-          "date": "2026-07-08"
-        }
       
     ]'></div>
     </div>
@@ -261,19 +246,41 @@
 
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
-  <ul class="social-icons">
-    
+  <div class="about-grid-container">
+    <div class="about-container">
+      <div class="about-title-container">
+        <div class="about-title-text">About us</div>
+        <div class="about-title-line"></div>
+      </div>
+      <div class="about-content">
+        <p>We are the xxx group at the HKUST(GZ). The group was established in 2024.</p>
+      </div>
+    </div>
+    <div class="about-container">
+      <div class="about-title-container">
+        <div class="about-title-text">Get in Touch</div>
+        <div class="about-title-line"></div>
+      </div>
+      <div class="about-content">
+        <p>
+          <strong>Address</strong>: No.1 Du Xue Rd, Nansha District, Guangzhou<br>
+          <strong>Email</strong>:
+          <a href="mailto:ningningding@hkustgz.edu.cn">ningningding@hkustgz.edu.cn</a>
+        </p>
 
-    
+      </div>
+    </div>
 
-    
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-  </ul>
+    <div class="about-container">
+      <div class="about-title-container">
+        <div class="about-title-line"></div>
+      </div>
+      <div class="about-content">
+        <img src="/assets/icons/hkustgz.png" alt="School Logo" class="about-logo" />
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Ning's Lab</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
-
        
       </footer>
     </div>

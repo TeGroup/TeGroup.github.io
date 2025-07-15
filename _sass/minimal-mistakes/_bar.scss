@@ -1,21 +1,22 @@
 .bar-container {
-  height: 45px;
+  height: 50px;
   width: 80%;
   max-width: $max-width;
   background-color: $main_color; // 淡紫色
-  margin: 20px auto; // 居中 + 上下间距
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  /*border-radius: 5px;*/
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); // 添加阴影
+  // border-radius: 5px;
 
   .bar-text {
     width: 80%;
     text-align: left;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     color: #fff;
-    line-height: 45px; // 与背景一致，垂直居中
+    line-height: 50px;
   }
 }
