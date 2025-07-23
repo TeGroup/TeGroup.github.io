@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "About"
+  - title: "ABOUT"
     url: /
-  - title: "People"
+  - title: "PEOPLE"
     url: /people/
-  - title: "Publication"
+  - title: "PUBLICATION"
     url: /publication/
-  - title: "Biography"
-    url: /biography/
-  - title: "Oppotunity"
+  # - title: "BIOGRAPHY"
+  #   url: /biography/
+  - title: "OPPOTUNITY"
     url: /oppotunity/ 

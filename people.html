@@ -15,7 +15,18 @@ permalink: /people/
 </head>
 
 <body>
-  <div class="container_header">
+
+    <section class="full-width-section hero-area">
+        <div class="container">
+            <h1>MEET OUR GROUP</h1>
+            <h1 style="color: #cfa827;">PEOPLE</h1>
+            <p>We’re a diverse team tackling real-world challenges in AI and systems.</p>
+        </div>
+    </section>
+
+    <script src="{{ '/scripts/shader.js' | relative_url }}"></script>
+    <!-- 
+    <div class="container_header">
       <div class="container_bak"></div>
       <div class="diamond-pattern-overlay"></div>
       <div class="text_wrapper">
@@ -23,66 +34,89 @@ permalink: /people/
         <div class="text-subtitle"><strong>People</strong></div>
         <div class="text-desc" style="color:black">We’re a diverse team tackling real-world challenges in AI and systems.</div>
       </div>
-  </div>
+  </div> -->
+    <div class="vanta-bg" , id="vanta-bg"></div>
 
-    <div class="bar-container">
-        <div class="bar-text">
-            FACULTY
+    <div class="page-content">
+        <div class="bar-container">
+            <div class="bar-text">
+                FACULTY
+            </div>
+        </div>
+
+        <div class="people-list">
+            {% assign target_category = "Faculty" %}
+            {% for person in site.data.people %}
+            {% if person.category == target_category %}
+            <div class="person-card">
+                <img src="{{ person.avatar }}" alt="{{ person.name }} 头像" class="person-avatar" />
+                <p class="person-name">{{ person.name }}</p>
+                <p class="person-description">{{ person.description }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="bar-container">
+            <div class="bar-text">
+                PHD STUDENT
+            </div>
+        </div>
+
+        <div class="people-list">
+            {% assign target_category = "PhD" %}
+            {% for person in site.data.people %}
+            {% if person.category == target_category %}
+            <div class="person-card">
+                <img src="{{ person.avatar }}" alt="{{ person.name }} 头像" class="person-avatar" />
+                <p class="person-name">{{ person.name }}</p>
+                <p class="person-gender">{{ person.gender }}</p>
+                <p class="person-description">{{ person.description }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="bar-container">
+            <div class="bar-text">
+                INTERNSHIP
+            </div>
+        </div>
+
+        <div class="people-list">
+            {% assign target_category = "RA" %}
+            {% for person in site.data.people %}
+            {% if person.category == target_category %}
+            <div class="person-card">
+                <img src="{{ person.avatar }}" alt="{{ person.name }} 头像" class="person-avatar" />
+                <p class="person-name">{{ person.name }}</p>
+                <p class="person-gender">{{ person.gender }}</p>
+                <p class="person-description">{{ person.description }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
+   <!-- VANTA 脚本 -->
+    <script src="{{ '/scripts/three.min.js' | relative_url }}"></script>
+    <script src="{{ '/scripts/vanta.waves.min.js' | relative_url }}"></script>
 
-    <div class="people-list">
-        {% assign target_category = "Faculty" %}
-        {% for person in site.data.people %}
-        {% if person.category == target_category %}
-        <div class="person-card">
-            <img src="{{ person.avatar }}" alt="{{ person.name }} 头像" class="person-avatar" />
-            <p class="person-name">{{ person.name }}</p> 
-            <p class="person-description">{{ person.description }}</p>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-
-    <div class="bar-container">
-        <div class="bar-text">
-            PHD STUDENT
-        </div>
-    </div>
-
-    <div class="people-list">
-        {% assign target_category = "PhD" %}
-        {% for person in site.data.people %}
-        {% if person.category == target_category %}
-        <div class="person-card">
-            <img src="{{ person.avatar }}" alt="{{ person.name }} 头像" class="person-avatar" />
-            <p class="person-name">{{ person.name }}</p>
-            <p class="person-gender">{{ person.gender }}</p>
-            <p class="person-description">{{ person.description }}</p>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-
-    <div class="bar-container">
-        <div class="bar-text">
-            INTERNSHIP
-        </div>
-    </div>
-
-    <div class="people-list">
-        {% assign target_category = "RA" %}
-        {% for person in site.data.people %}
-        {% if person.category == target_category %}
-        <div class="person-card">
-            <img src="{{ person.avatar }}" alt="{{ person.name }} 头像" class="person-avatar" />
-            <p class="person-name">{{ person.name }}</p>
-            <p class="person-gender">{{ person.gender }}</p>
-            <p class="person-description">{{ person.description }}</p>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </div>
+    <script>
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x5a6c7f,
+            shininess: 27.00,
+            waveSpeed: 0.20,
+            zoom: 1.07
+        })
+    </script>
 </body>
 
 </html>

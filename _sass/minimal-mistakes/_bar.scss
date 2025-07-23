@@ -1,18 +1,18 @@
 .bar-container {
   height: 50px;
-  width: 80%;
+  width: 95%;
   max-width: $max-width;
-  background-color: $main_color; // 淡紫色
+  background-color: $yellow; // 淡紫色
   margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); // 添加阴影
-  // border-radius: 5px;
+  border-radius: 5px;
 
   .bar-text {
-    width: 80%;
+    width: 85%;
     text-align: left;
     font-size: 30px;
     font-weight: bold;

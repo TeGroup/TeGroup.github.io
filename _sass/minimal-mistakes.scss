@@ -4,6 +4,7 @@
 /* Variables */
 @import "minimal-mistakes/font";
 @import "minimal-mistakes/variables";
+@import "minimal-mistakes/varibalescustom";
 
 /* Mixins and functions */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
@@ -33,6 +34,7 @@
 @import "minimal-mistakes/people";
 @import "minimal-mistakes/paper";
 @import "minimal-mistakes/common";
+@import "minimal-mistakes/common_fullwidth";
 /* Utility classes */
 @import "minimal-mistakes/utilities";
 

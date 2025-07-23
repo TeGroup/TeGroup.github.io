@@ -14,63 +14,89 @@ layout: default
 </head>
 
 <body>
-<div class="container_header">
-   <div class="diamond-pattern-overlay"></div>
-    <div class="text_wrapper">
-        <div class="text-intro"><strong>Welcome to</strong></div>
-        <div class="text-subtitle"><strong>Ning's Lab</strong></div>
-        <div class="text-desc">Research spans artificial intelligence, network systems, and network economics. </div>
+
+  <section class="full-width-section index-area">
+    <div class="container">
+      <h1>ABOUT ME</h1>
+      <h1 style="color: #cfa827;">BIOGRAPHY</h1>
+      <p>The Hong Kong University of Science and Technology (Guangzhou).</p>
     </div>
-</div>
+  </section>
 
-  <div class="container_photobox">
-    <img src="{{ '/assets/gallery/index.jpg' | relative_url }}" alt="Lab Photo" class="lab-photo" />
-  </div>
-
-
-  <div class="container_researchbox">
-    <p>Our research focus on ...</p>
-  </div>
-
-  <!-- <div class="outer-container">
-    <h2>News</h2>
-    <button class="nav-btn left">
-      <img src="/assets/icons/button-left.svg" alt="left" width="44" height="44" />
-    </button>
-    <button class="nav-btn right">
-      <img src="/assets/icons/button-right.svg" alt="right" width="44" height="44" />
-    </button>
-    <div class="news-wrapper">
-      <div id="newsContainer" class="news-container" data-news='[
-      {% for item in site.data.news %}
-        {
-          "content": "{{ item.content | escape }}",
-          "date": "{{ item.date | date: "%Y-%m-%d" }}"
-        }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]'></div>
-    </div>
-  </div> -->
-
-  <div class="gallery-container">
-    <button class="gallery-btn left">
-      <img src="/assets/icons/button-grey-left.svg" alt="left" width="44" height="44" />
-    </button>
-    <button class="gallery-btn right">
-      <img src="/assets/icons/button-grey-right.svg" alt="right" width="44" height="44" />
-    </button>
-    <div class="gallery-background"></div>
-    <div class="gallery">
-      <div class="gallery-slider" id="gallerySlider" data-images='[
-      {% for item in site.data.gallery %}
-        "{{ item.url }}"{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]'>
+  <div class="index-content" style="max-width: 1200px;">
+    <div class="image-text-block">
+      <img src="/assets/avatars/ningningding_bio.jpg" alt="example" class="image">
+      <div class="text">
+        <p>I am a Tenure-Track Assistant Professor in the Data Science and Analytics Thrust and
+          the Internet of Things Thrust, Information Hub, Hong Kong University of Science and Technology
+          (Guangzhou).
+          My research focuses on interdisciplinary areas of artificial intelligence, network systems, and network
+          economics.
+          Multiple PhD openings are available [Details]. If you are interested, please email me your CV and transcripts!
+        </p>
       </div>
     </div>
+
   </div>
-  <!-- <script src="scripts/news.js"></script> -->
-  <script src="scripts/gallery.js"></script>
+
+  <div class="background-div">
+  </div>
+
+
+
+  <div class="page-content" style="max-width: 1200px;">
+    <div class="bar-container">
+      <div class="bar-text">
+        BIOGRAPHY
+      </div>
+    </div>
+
+    <div class="experience-section">
+      {% for item in site.data.biography %}
+      <div class="exp-subtitle"><strong>{{ item.title }}</strong> ({{ item.duration }})</div>
+      <div class="experience-item">
+        {% if item.link1 %}
+        <div>{{ item.link1 }}</div>
+        {% endif %}
+        {% if item.link2 %}
+        <div>{{ item.link2 }}</div>
+        {% endif %}
+        {% if item.link3 %}
+        <div>{{ item.link3 }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="page-content" style="max-width: 1200px;">
+
+
+    <div class="bar-container">
+      <div class="bar-text">
+        SERVICE
+      </div>
+    </div>
+
+    <div class="service-section">
+      <div class="service-subtitle"><strong>Organizing/Technical Committee:</strong></div>
+      <ul class="service-list">
+        {% for item in site.data.committee %}
+        <li>{{ item.content | markdownify | strip_html | strip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="service-section">
+      <div class="service-subtitle"><strong>Technical Review:</strong></div>
+      <ul class="service-list">
+        {% for item in site.data.review %}
+        <li>{{ item.content | markdownify | strip_html | strip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
 </body>
 
 </html>
