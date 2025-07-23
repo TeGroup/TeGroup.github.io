@@ -30,7 +30,7 @@
 
   <div id="footer" class="page__footer">
     <footer>
-      {% include footer/custom.html %}
+
       {% include_cached footer.html %}
 
     </footer>
@@ -38,7 +38,7 @@
   <div id="footer_bottom" class="page__footer-bottom"></div>
   {% include scripts.html %}
 </body>
-<!-- VANTA 脚本 -->
+<!-- VANTA Scripts -->
 <script src="{{ '/scripts/three.min.js' | relative_url }}"></script>
 <script src="{{ '/scripts/vanta.waves.min.js' | relative_url }}"></script>
 
@@ -57,20 +57,7 @@
     waveSpeed: 0.15,
     zoom: 1.07
   })
-  // VANTA.WAVES({
-  //     el: "#vanta-bg",
-  //     mouseControls: true,
-  //     touchControls: true,
-  //     gyroControls: false,
-  //     minHeight: 200.00,
-  //     minWidth: 200.00,
-  //     scale: 1.00,
-  //     scaleMobile: 1.00,
-  //     color: 0x5a6c7f,
-  //     shininess: 27.00,
-  //     waveSpeed: 0.20,
-  //     zoom: 1.07
-  // })
+
 </script>
 
 </html>

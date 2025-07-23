@@ -1,6 +1,7 @@
 .people-list {
   width: 80%;
   max-width: 800pt; 
+  min-width: 800pt;
   margin: 0 auto;   /* 容器居中 */
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 一行4列 */
@@ -23,18 +24,18 @@
 
   .person-name {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 25px;
     margin: 0 0 5px 0;
   }
 
   .person-gender {
-    font-size: 1rem;
+    font-size: 20px;
     color: #666;
     margin: 0 0 5px 0;
   }
 
   .person-description {
-    font-size: 0.9rem;
+    font-size: 20px;
     color: #777;
     margin: 0;
   }

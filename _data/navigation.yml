@@ -6,7 +6,5 @@ main:
     url: /people/
   - title: "PUBLICATION"
     url: /publication/
-  # - title: "BIOGRAPHY"
-  #   url: /biography/
   - title: "OPPOTUNITY"
     url: /oppotunity/ 

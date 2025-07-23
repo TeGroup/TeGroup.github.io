@@ -25,19 +25,8 @@ permalink: /people/
     </section>
 
     <script src="{{ '/scripts/shader.js' | relative_url }}"></script>
-    <!-- 
-    <div class="container_header">
-      <div class="container_bak"></div>
-      <div class="diamond-pattern-overlay"></div>
-      <div class="text_wrapper">
-        <div class="text-intro" style="color:black"><strong>Meet our group</strong></div>
-        <div class="text-subtitle"><strong>People</strong></div>
-        <div class="text-desc" style="color:black">We’re a diverse team tackling real-world challenges in AI and systems.</div>
-      </div>
-  </div> -->
-    <div class="vanta-bg" , id="vanta-bg"></div>
 
-    <div class="page-content">
+    <div class="page-content" style="min-width: 900pt;">
         <div class="bar-container">
             <div class="bar-text">
                 FACULTY
@@ -97,26 +86,7 @@ permalink: /people/
             {% endfor %}
         </div>
     </div>
-   <!-- VANTA 脚本 -->
-    <script src="{{ '/scripts/three.min.js' | relative_url }}"></script>
-    <script src="{{ '/scripts/vanta.waves.min.js' | relative_url }}"></script>
 
-    <script>
-        VANTA.WAVES({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x5a6c7f,
-            shininess: 27.00,
-            waveSpeed: 0.20,
-            zoom: 1.07
-        })
-    </script>
 </body>
 
 </html>
