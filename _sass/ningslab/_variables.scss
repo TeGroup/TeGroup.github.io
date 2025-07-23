@@ -15,42 +15,6 @@ $doc-font-size-x-large: $doc-font-size * 1.375 !default;
 $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
-/* Modern font stack */
-/* https://github.com/system-fonts/modern-font-stacks */
-
-/* Sans serif - modern font stack */
-$system-ui: system-ui, sans-serif;
-$humanist: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-$geometric-humanist: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-$classical-humanist: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
-$neo-grotesque: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-$industrial: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
-$rounded-sans: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
-
-/* sans serif typefaces - defined in Minimal Mistakes */
-$helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
-
-/* Serif - modern font stack */
-$transitional: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
-$old-style: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;;
-$monospace-slab-serif: 'Nimbus Mono PS', 'Courier New', monospace;
-$slab-serif: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
-$antique: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
-$didone: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
-
-/* serif typefaces - defined in Minimal Mistakes */
-$georgia: Georgia, serif !default;
-$times: Times, serif !default;
-$bodoni: "Bodoni MT", serif !default;
-$calisto: "Calisto MT", serif !default;
-$garamond: Garamond, serif !default;
-
-/* Monospace - modern font stack */
-$monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-
-/* Handwritten - modern font stack */
-$handwritten: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
-
 /* Defaults used in Minimal mistakes */
 $default-sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $default-serif: Georgia, Times, serif;
@@ -160,24 +124,6 @@ $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 $notice-background-mix: 80% !default;
 $code-notice-background-mix: 90% !default;
 
-/* syntax highlighting (base16) */
-$base00: #263238 !default;
-$base01: #2e3c43 !default;
-$base02: #314549 !default;
-$base03: #546e7a !default;
-$base04: #b2ccd6 !default;
-$base05: #eeffff !default;
-$base06: #eeffff !default;
-$base07: #ffffff !default;
-$base08: #f07178 !default;
-$base09: #f78c6c !default;
-$base0a: #ffcb6b !default;
-$base0b: #c3e88d !default;
-$base0c: #89ddff !default;
-$base0d: #82aaff !default;
-$base0e: #c792ea !default;
-$base0f: #ff5370 !default;
-
 /*
    Breakpoints
    ========================================================================== */
@@ -209,28 +155,21 @@ $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
+
 /*custom*/
 $max-width: 1400px;
 $background-color: #fff;
 $main-color:#3a5581;
 $yellow: #cfa827;
 $constrast-color: #dfdfde;
-
-// 颜色变量
 $primary-color: #007bff;
 $text-color: #333;
 $white-color: #ffffff;
 $black-overlay: rgba(0, 0, 0, 0.5);
-
-// 字体变量
 $font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-base: 16px;
-
-// 间距变量
 $spacing-unit: 1rem; // 16px
 $header-height: 60px;
-
-// 背景图片路径
 $hero-background-image: '/assets/images/bak1.jpg'; 
 $hero-background-image-alt: '/assets/gallery/index.jpg';
 $black-overlay: rgba(0, 0, 0, 0.4); 
