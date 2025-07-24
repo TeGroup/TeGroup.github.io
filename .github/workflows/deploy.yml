@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
+      - name: Clean previous build
+        run: bundle exec jekyll clean
+
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
