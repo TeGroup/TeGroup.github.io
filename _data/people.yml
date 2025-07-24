@@ -1,40 +1,30 @@
 - name: NingNing Ding
   avatar: /assets/avatars/ningningding_bio.jpg
-  description: advisor
   category: Faculty
 - name: JiaHao Zeng
   avatar: /assets/avatars/jiahaozeng_1.jpg
-  description: 2024.9~Now
   category: PhD
 - name: Siyuan Wen
   avatar: /assets/avatars/siyuanwen_1.jpg
-  description: 2024.9~Now
   category: PhD
 - name: Chenyu Lu
   avatar: /assets/avatars/chenyulu_1.jpg
-  description: 2025.6~Now
   category: RA
 - name: Chenyu Gong
   avatar: /assets/avatars/chenyugong_1.jpg
-  description: Co-supervise
   category: PhD
 - name: YinZhi Liu
   avatar: /assets/avatars/yinzhiliu_1.jpg
-  description: Co-supervise
-  category: PhD
-- name: Yaohui Wu
-  avatar: /assets/avatars/yaohuiwu_1.jpg
-  description: 2025.9～Now
   category: PhD
 - name: Zhihui Li
   avatar: /assets/avatars/zhihuili_1.jpg
-  description: 2025.9～Now
+  category: PhD
+- name: Yaohui Wu
+  avatar: /assets/avatars/yaohuiwu_1.jpg
   category: PhD
 - name: Junyi Li
   avatar: /assets/avatars/junyili_1.jpg
-  description: 2025.9~Now
   category: PhD
 - name: YanZhi Jin
   avatar: /assets/avatars/yanzhijin_1.jpg
-  description: 2025.7~Now
   category: RA
