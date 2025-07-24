@@ -2306,7 +2306,7 @@ body {
 .image-text-block .text {
   flex: 2.5;
   line-height: 1.4;
-  color: #444;
+  color: #000;
 }
 .image-text-block .text h2 {
   font-size: 1.5rem;
