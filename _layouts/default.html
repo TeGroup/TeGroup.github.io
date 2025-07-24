@@ -7,6 +7,27 @@
 <head>
   {% include head.html %}
   {% include head/custom.html %}
+<!-- VANTA Scripts -->
+<script src="{{ '/scripts/three.min.js' | relative_url }}"></script>
+<script src="{{ '/scripts/vanta.waves.min.js' | relative_url }}"></script>
+
+<script>
+  VANTA.WAVES({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x2b457a,
+    shininess: 22.00,
+    waveSpeed: 0.15,
+    zoom: 1.07
+  })
+
+</script>
 </head>
 
 <body
@@ -31,26 +52,6 @@
   <div id="footer_bottom" class="page__footer-bottom"></div>
   {% include scripts.html %}
 </body>
-<!-- VANTA Scripts -->
-<script src="{{ '/scripts/three.min.js' | relative_url }}"></script>
-<script src="{{ '/scripts/vanta.waves.min.js' | relative_url }}"></script>
 
-<script>
-  VANTA.WAVES({
-    el: "#vanta-bg",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x2b457a,
-    shininess: 22.00,
-    waveSpeed: 0.15,
-    zoom: 1.07
-  })
-
-</script>
 
 </html>
