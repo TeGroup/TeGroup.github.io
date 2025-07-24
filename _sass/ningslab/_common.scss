@@ -90,20 +90,18 @@
 }
 
 
-/* 小屏幕设备 (例如手机, 宽度最大为 767px) */
 @media (max-width: 767px) {
     .hero-area h1 {
-        font-size: 1.8em; /* 调整为更适合手机的字体大小 */
-        /* 你可以根据需要进一步调整这个值 */
+        font-size: 1.8em; 
     }
 
     .hero-area p {
-        font-size: 1em; /* 也可以同时调整 p 的字体大小 */
+        font-size: 0.8em;
     }
 
-    /* 如果你需要调整padding让内容更舒适 */
     .hero-area {
-        padding: 80px 0; /* 减小上下 padding */
+        padding: 80px 0;
+        aspect-ratio: 5/3;
     }
 }
 
