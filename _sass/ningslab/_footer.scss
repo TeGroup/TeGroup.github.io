@@ -14,11 +14,8 @@
     margin-inline: auto;
     margin-top: 2em;
     max-width: 100%;
-    padding: 0 1em 2em;
+    padding: 0;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
   }
 
   a {
@@ -38,137 +35,117 @@
   }
 }
 
-.page__footer-copyright {
-  width: 100%;
-  font-family: $global-font-family;
-  font-size: $type-size-7;
-}
 
 .page__footer-bottom {
   width: 100%;
   height: 20pt;
-  min-width: 900pt;
   background-color: $main-color;
-  margin: auto;
+  margin: 0, auto;
   padding: 0;
 }
 
-
-
 .page__footer-follow {
   width: 100%;
-  height: 100pt;
-  margin: 0 auto;
+  min-height: 100px; 
+  padding: 20px 0 0 0; 
+  box-sizing: border-box; 
 }
 
-/* ==========================================================================
-   _about-section.scss - Jekyll page container styles
-   ========================================================================== */
 
-/*
- * Note: Assumes you have a variable defined, e.g., $constrast-color: #f5f5f5;
- */
-
-/*
- * Parent container for multi-column layout.
- * This container uses Flexbox to arrange child elements in a row.
- * It ensures equal height for all child containers.
- */
 .about-grid-container {
   display: flex;
-  flex-wrap: wrap;       /* Allows child containers to wrap to the next row if needed */
-  gap: 2px;             /* Defines the space between columns and rows */
-  justify-content: center; /* Centers the containers horizontally */
-  align-items: stretch;  /* Ensures all child containers have the same height */
-  padding: 2px;         /* Optional: Adds padding around the entire grid */
-  max-width: 100%; 
+  flex-wrap: wrap; 
+  row-gap: 2px;
+  column-gap: 5px;      
+  justify-content: center; 
+  align-items: flex-start;
+  max-width: 900px; 
   margin: 0 auto;    
+  padding: 0 0 35px 0; 
+  box-sizing: border-box; 
 }
 
-/*
- * Main container for a single content block.
- * This can be used alone or as part of the multi-column layout.
- */
 .about-container {
-  width: 280px;        /* Maximum width for each container */
-  height: 100%;           /* Fixed height for a consistent look */
-  margin: 0;               /* Reset margin, as gap in parent handles spacing */
-  margin-right: 20px;
-  margin-top: 25pt;
-  padding: 2px;
+  flex: 1 1 250px;
+  height: auto; 
+  margin: 0;             
+  padding: 15px 15px 0px 15px;
   background-color: $constrast-color;
-
+  display: flex;
+  flex-direction: column;
 }
 
 
 .about-title-container {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 0.1em;
   height: 20px;
 }
 
-/*
- * The title text style.
- */
 .about-title-text {
-  font-size: 25px;
+  font-size: clamp(18px, 1.1em, 25px);
   font-weight: bold;
   color: #444;
   margin-right: 20px;
-  white-space: nowrap; /* Prevents the text from wrapping */
+  white-space: nowrap;
 }
 
-/*
- * The line next to the title.
- * The `flex-grow: 1` property makes it fill the remaining space.
- */
 .about-title-line {
   color: #444;
   flex-grow: 1;
   height: 2px;
   background-color: #000;
+  min-width: 20px;
 }
 
-/*
- * The content section of the container.
- * This can hold text, images, or lists.
- */
 .about-content {
-  font-size: 15px;
+  font-size: clamp(14px, 0.7em, 20px);
   color: #444;
-  line-height: 1.3;
-  overflow-y: auto;       /* Adds a scrollbar if content exceeds the fixed height */
+  line-height: 1.2;
+  overflow-y: auto;
 }
 
-/*
- * General styles for images within the container.
- */
 .about-logo {
-  max-width: 200px;
+  max-width: 200px; 
   height: auto;
   margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*
- * Styles for a key-value list.
- */
-.about-content-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+
+/* 小屏幕设备 (如手机，宽度小于 768px) */
+@media (max-width: 767px) {
+  .about-grid-container {
+    flex-direction: column; /* 让容器垂直堆叠 */
+    align-items: center; /* 垂直居中堆叠的容器 */
+  }
+
+  .about-container {
+    width: 95%; /* 小屏幕上每个容器占据大部分宽度 */
+    max-width: 400px; /* 但限制最大宽度，避免在某些平板上过宽 */
+    flex: 0 0 auto; /* 不增长不收缩，宽度固定为 95% 或 max-width */
+  }
 }
 
-.about-content-item {
-  display: flex;
-  margin-bottom: 5px;
+/* 中等屏幕设备 (如平板，宽度在 768px 到 1024px 之间) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    /* 两列布局：减去一半的 gap 来计算宽度，确保间距正确 */
+    flex-basis: calc(50% - 10px); 
+    max-width: calc(50% - 10px); 
+  }
 }
 
-.about-content-key {
-  font-weight: bold;
-  margin-right: 5px;
+/* 大屏幕设备 (宽度大于 1025px) */
+@media (min-width: 1025px) {
+  .about-container {
+    /* 三列布局：减去三分之二的 gap 来计算宽度，确保间距正确 */
+    flex-basis: calc(33.33% - 13.33px); 
+    max-width: calc(33.33% - 13.33px); 
+  }
 }
 
-.about-content-value {
-  flex-grow: 1;
-}

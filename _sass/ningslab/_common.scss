@@ -89,19 +89,6 @@
     }
 }
 
-.hero-area::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    background-image: url($hero-background-image), url($hero-background-image-alt) url('/assets/images/bak1.jpg'), url('/assets/images/bak2.jpg'), url('/assets/images/bak3.jpg');
-    background-size: 0 0;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    visibility: hidden;
-}
-
 
 .index-area {
     background-size: 100% auto;
