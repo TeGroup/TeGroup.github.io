@@ -18,6 +18,9 @@
     font-weight: bold;
     color: #fff;
     line-height: 50px;
+    @media (max-width: 768px) {
+        width: 95%;
+    }   
   }
 
   @media (max-width: 768px) {
