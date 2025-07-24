@@ -15,7 +15,7 @@ permalink: /service/
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 
-<section class="full-width-section hero-area" style="background-image: url(/assets/gallery/service_bak.jpg);">
+<section class="full-width-section hero-area" style="background-image: url(/assets/gallery/service_bak1.webp);">
     <div class="container">
         <!-- <h1>READ UP ON OUR WORK</h1> -->
         <h1 style="color:#cfa827">SERVICE</h1>
@@ -30,21 +30,24 @@ permalink: /service/
 
     <div class="bar-container">
       <div class="bar-text">
-        SERVICE
+        Organizing/Technical Committee
       </div>
     </div>
 
     <div class="service-section">
-      <div class="service-subtitle"><strong>Organizing/Technical Committee:</strong></div>
       <ul class="service-list">
         {% for item in site.data.committee %}
         <li>{{ item.content | markdownify | strip_html | strip }}</li>
         {% endfor %}
       </ul>
     </div>
-
+    <div class="bar-container">
+      <div class="bar-text">
+        Technical Review
+      </div>
+    </div>
     <div class="service-section">
-      <div class="service-subtitle"><strong>Technical Review:</strong></div>
+      
       <ul class="service-list">
         {% for item in site.data.review %}
         <li>{{ item.content | markdownify | strip_html | strip }}</li>

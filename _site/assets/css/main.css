@@ -1894,7 +1894,7 @@ input[type=submit],
 }
 @media (max-width: 768px) {
   .bar-container .bar-text {
-    width: 100%;
+    width: 95%;
   }
 }
 @media (max-width: 768px) {
