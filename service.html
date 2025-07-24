@@ -1,0 +1,58 @@
+---
+layout: default
+title: "service"
+permalink: /service/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preload" href="/assets/images/bak3.jpg" as="image">
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+
+<section class="full-width-section hero-area" style="background-image: url(/assets/gallery/service_bak.jpg);">
+    <div class="container">
+        <!-- <h1>READ UP ON OUR WORK</h1> -->
+        <h1 style="color:#cfa827">SERVICE</h1>
+        <!-- <p>We publish our work at the international top-tier venues for all of our research areas.</p> -->
+    </div>
+</section>
+
+<body>
+
+  <div class="page-content" style="max-width: 1200px;">
+
+
+    <div class="bar-container">
+      <div class="bar-text">
+        SERVICE
+      </div>
+    </div>
+
+    <div class="service-section">
+      <div class="service-subtitle"><strong>Organizing/Technical Committee:</strong></div>
+      <ul class="service-list">
+        {% for item in site.data.committee %}
+        <li>{{ item.content | markdownify | strip_html | strip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="service-section">
+      <div class="service-subtitle"><strong>Technical Review:</strong></div>
+      <ul class="service-list">
+        {% for item in site.data.review %}
+        <li>{{ item.content | markdownify | strip_html | strip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>

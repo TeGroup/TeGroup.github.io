@@ -6,5 +6,7 @@ main:
     url: /people/
   - title: "PUBLICATION"
     url: /publication/
+  - title: "SERVICE"
+    url: /service/
   - title: "OPPOTUNITY"
     url: /oppotunity/ 

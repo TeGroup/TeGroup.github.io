@@ -23,79 +23,48 @@ layout: default
     </div>
   </section>
 
-  <div class="index-content" style="max-width: 1200px;">
+  <div class="index-content" style="max-width: 1100px;">
     <div class="image-text-block">
       <img src="/assets/avatars/ningningding_bio.jpg" alt="example" class="image">
-      <div class="text">
-        <p style="font-weight: bold;">I am a Tenure-Track Assistant Professor in the Data Science and Analytics Thrust and
-          the Internet of Things Thrust, Information Hub, Hong Kong University of Science and Technology
+      <div class="text", style="text-align: center;">
+        <p>Assistant Professor
+          <br>Data Science and Analytics Thrust and the Internet of Things Thrust
+          <br>Information Hub
+          <br>The Hong Kong University of Science and Technology
           (Guangzhou).
-          My research focuses on interdisciplinary areas of artificial intelligence, network systems, and network
-          economics.
-          Multiple PhD openings are available <a href="{{'/oppotunity/'|relative_url}}" style="text-decoration: none; color: #3a5581;">[Details]</a>. If you are interested, please email me your CV and transcripts!
         </p>
+      <br>
+        <p style="font-size: 1rem;">Email: ningningding[at]hkust-gz.edu.cn</p>
       </div>
     </div>
 
   </div>
 
   <div class="background-div">
+
   </div>
 
 
-
-  <div class="page-content" style="max-width: 1200px;">
-    <div class="bar-container">
-      <div class="bar-text">
-        BIOGRAPHY
-      </div>
-    </div>
-
-    <div class="experience-section">
-      {% for item in site.data.biography %}
-      <div class="exp-subtitle"><strong>{{ item.title }}</strong> ({{ item.duration }})</div>
-      <div class="experience-item">
-        {% if item.link1 %}
-        <div>{{ item.link1 }}</div>
-        {% endif %}
-        {% if item.link2 %}
-        <div>{{ item.link2 }}</div>
-        {% endif %}
-        {% if item.link3 %}
-        <div>{{ item.link3 }}</div>
-        {% endif %}
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="page-content" style="max-width: 1200px;">
-
-
-    <div class="bar-container">
-      <div class="bar-text">
-        SERVICE
-      </div>
-    </div>
-
-    <div class="service-section">
-      <div class="service-subtitle"><strong>Organizing/Technical Committee:</strong></div>
-      <ul class="service-list">
-        {% for item in site.data.committee %}
-        <li>{{ item.content | markdownify | strip_html | strip }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="service-section">
-      <div class="service-subtitle"><strong>Technical Review:</strong></div>
-      <ul class="service-list">
-        {% for item in site.data.review %}
-        <li>{{ item.content | markdownify | strip_html | strip }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+      <div class="page-content" style="max-width: 1100px;">
+        <div class="text-box">
+            I am a Tenure-Track Assistant Professor in the Data Science and Analytics Thrust and the Internet of Things Thrust, Information Hub, Hong Kong University of Science and Technology (Guangzhou). 
+            I also hold an affiliated position at the Hong Kong University of Science and Technology (Clear Water Bay). 
+            <br><br>
+            I received my PhD from The Chinese University of Hong Kong, Hong Kong SAR, China, advised by Prof. Jianwei Huang. 
+            Before joining HKUST-GZ, I was a Postdoctoral Scholar at Northwestern University, Evanston, USA, advised by Prof. Randall Berry and Prof. Ermin Wei.
+            <br><br>
+            I am actively looking for self-motivated PhD students (Spring/Fall 2026) to join our lab [Details]. 
+            If you are interested, please email me your CV and all transcripts!
+        </div>
+        <div class="text-box">
+            <strong>Research Interests:</strong>
+            <ul class="openning-list">
+                <li><strong style="color: #000;">Artificial intelligence</strong>: federated learning, machine
+                    unlearning, multi-agent coordination and game.</li>
+                <li><strong style="color: #000;">Network system</strong>: Internet of Things (IoT).</li>
+                <li><strong style="color: #000;">Network economics</strong>: data trading, mechanism design.</li>
+            </ul>
+        </div>
 
 </body>
 

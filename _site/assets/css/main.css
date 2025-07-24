@@ -1892,6 +1892,16 @@ input[type=submit],
   color: #fff;
   line-height: 50px;
 }
+@media (max-width: 768px) {
+  .bar-container .bar-text {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .bar-container {
+    width: 100%;
+  }
+}
 
 .people-list {
   width: 90%;
@@ -1900,6 +1910,11 @@ input[type=submit],
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .people-list {
+    width: 100%;
+  }
 }
 
 .person-card {
@@ -1938,6 +1953,11 @@ body {
   margin: auto;
   margin-bottom: 0;
   margin-top: 0;
+}
+@media (max-width: 768px) {
+  .conference-table {
+    width: 90%;
+  }
 }
 
 .paper-entry {
@@ -2064,18 +2084,16 @@ body {
   opacity: 0.9;
 }
 
-/* 小屏幕设备 (例如手机, 宽度最大为 767px) */
 @media (max-width: 767px) {
   .hero-area h1 {
-    font-size: 1.8em; /* 调整为更适合手机的字体大小 */
-    /* 你可以根据需要进一步调整这个值 */
+    font-size: 1.8em;
   }
   .hero-area p {
-    font-size: 1em; /* 也可以同时调整 p 的字体大小 */
+    font-size: 0.8em;
   }
-  /* 如果你需要调整padding让内容更舒适 */
   .hero-area {
-    padding: 80px 0; /* 减小上下 padding */
+    padding: 50px 0;
+    aspect-ratio: 5/3;
   }
 }
 .index-area {
@@ -2089,6 +2107,7 @@ body {
   justify-content: center;
   text-align: center;
   position: relative;
+  padding: 40pt 0 0 0;
   overflow: hidden;
 }
 .index-area .container {
@@ -2134,18 +2153,30 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
 }
+@media (max-width: 768px) {
+  .page-content {
+    width: 95%;
+    padding: 0.2rem;
+  }
+}
 
 .index-content {
   width: 80%;
   position: relative;
   z-index: 2;
-  padding: 2rem;
+  padding: 1.3rem;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
+}
+@media (max-width: 768px) {
+  .index-content {
+    width: 95%;
+    padding: 0.2rem;
+  }
 }
 
 .container {
@@ -2188,6 +2219,11 @@ body {
 .application-box a {
   color: #3a5581;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .application-box {
+    width: 100%;
+  }
 }
 
 .experience-section {
@@ -2239,6 +2275,11 @@ body {
   font-size: 25px;
   color: #3a5581;
 }
+@media (max-width: 768px) {
+  .service-section {
+    width: 100%;
+  }
+}
 
 .background-div {
   background: #3a5581;
@@ -2252,28 +2293,29 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   max-width: 1000px;
 }
 .image-text-block .image {
-  flex: 1;
-  max-width: 25%;
+  flex: 1.5;
+  width: 30%;
+  max-width: 30%;
   border-radius: 8px;
   object-fit: cover;
 }
 .image-text-block .text {
-  flex: 3;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
+  flex: 2.5;
+  line-height: 1.4;
+  color: #444;
 }
 .image-text-block .text h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 .image-text-block .text p {
-  font-size: 1rem;
-  margin: 0;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  max-width: 75%;
 }
 
 @media (max-width: 768px) {
@@ -2345,6 +2387,11 @@ body {
 .text-box .openning-list li::marker {
   font-size: 25px;
   color: #3a5581;
+}
+@media (max-width: 768px) {
+  .text-box {
+    width: 95%;
+  }
 }
 
 /* Utility classes */
