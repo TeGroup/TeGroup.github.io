@@ -1,4 +1,4 @@
-name: Build and Deploy Jekyll with Ruby 3.3
+name: Build Website
 
 on:
   push:
