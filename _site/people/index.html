@@ -7,27 +7,7 @@
   <link rel="preload" href="/scripts/vanta.waves.min.js" as="script"> -->
 
   <!-- VANTA Scripts -->
-  <script src="/scripts/three.min.js"></script>
-  <script src="/scripts/vanta.waves.min.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      VANTA.WAVES({
-        el: "#vanta-bg",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x2b457a,
-        shininess: 22.00,
-        waveSpeed: 0.15,
-        zoom: 1.07
-      });
-    });
-  </script>
 
 
   <meta charset="utf-8">
@@ -99,7 +79,7 @@
 <body
   class="layout--default"
   dir="ltr">
-  <div class="vanta-bg" id="vanta-bg"></div>
+
   
 
 <div class="masthead">
@@ -168,7 +148,28 @@
 </script>
 
 
+    <div class="vanta-bg" id="vanta-bg"></div>
+    <script src="/scripts/three.min.js"></script>
+  <script src="/scripts/vanta.waves.min.js"></script>
 
+  <script>
+   window.addEventListener('load', function () {
+    VANTA.WAVES({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x2b457a,
+        shininess: 22.00,
+        waveSpeed: 0.1,
+        zoom: 1.07
+      });
+  });
+  </script>
   <div class="initial-content">
     <!DOCTYPE html>
 <html lang="en">
