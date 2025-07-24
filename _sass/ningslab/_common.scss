@@ -226,7 +226,12 @@
         color: $main-color;
         text-decoration: none;
     }
+    
+    @media (max-width: 768px) {
+        width: 100%;
+    }   
 }
+
 
 
 .experience-section {
@@ -292,6 +297,9 @@
         }
 
     }
+    @media (max-width: 768px) {
+        width: 100%;
+    }   
 }
 
 .background-div {
