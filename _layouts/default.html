@@ -5,30 +5,34 @@
 <html lang="{{ site.locale | replace: " _", "-" | default: "en" }}" class="no-js">
 
 <head>
-<!-- VANTA Scripts -->
-<link rel="preload" href="{{ '/scripts/vanta.waves.min.js' | relative_url }}" as="script" type="text/javascript">
-<link rel="preload" href="{{ '/scripts/three.min.js' | relative_url }}" as="script" type="text/javascript">
+  <!-- Preload -->
+  <link rel="preload" href="{{ '/scripts/three.min.js' | relative_url }}" as="script">
+  <link rel="preload" href="{{ '/scripts/vanta.waves.min.js' | relative_url }}" as="script">
 
-<script src="{{ '/scripts/three.min.js' | relative_url }}"></script>
-<script src="{{ '/scripts/vanta.waves.min.js' | relative_url }}"></script>
+  <!-- VANTA Scripts -->
+  <script src="{{ '/scripts/three.min.js' | relative_url }}"></script>
+  <script src="{{ '/scripts/vanta.waves.min.js' | relative_url }}"></script>
 
-<script>
-  VANTA.WAVES({
-    el: "#vanta-bg",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x2b457a,
-    shininess: 22.00,
-    waveSpeed: 0.15,
-    zoom: 1.07
-  })
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      VANTA.WAVES({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x2b457a,
+        shininess: 22.00,
+        waveSpeed: 0.15,
+        zoom: 1.07
+      });
+    });
+  </script>
 
-</script>
+
   {% include head.html %}
   {% include head/custom.html %}
 </head>
