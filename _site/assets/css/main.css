@@ -2102,7 +2102,7 @@ body {
   }
 }
 .index-area {
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: background-size 0.5s cubic-bezier(0.33, 1, 0.68, 1), background-image 0.6s ease-in-out;
@@ -2402,7 +2402,7 @@ body {
 @media (max-width: 768px) {
   .text-box {
     width: 95%;
-    padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+    padding: 0.7rem 0.2rem 0.4rem 0.2rem;
   }
 }
 
