@@ -1,7 +1,7 @@
-- name: NingNing Ding
+- name: Ningning Ding
   avatar: /assets/avatars/ningningding_bio.jpg
   category: Faculty
-- name: JiaHao Zeng
+- name: Jiahao Zeng
   avatar: /assets/avatars/jiahaozeng_1.jpg
   category: PhD
 - name: Siyuan Wen
@@ -13,7 +13,7 @@
 - name: Chenyu Gong
   avatar: /assets/avatars/chenyugong_1.jpg
   category: PhD
-- name: YinZhi Liu
+- name: Yinzhi Liu
   avatar: /assets/avatars/yinzhiliu_1.jpg
   category: PhD
 - name: Zhihui Li
@@ -25,6 +25,6 @@
 - name: Junyi Li
   avatar: /assets/avatars/junyili_1.jpg
   category: PhD
-- name: YanZhi Jin
+- name: Yanzhi Jin
   avatar: /assets/avatars/yanzhijin_1.jpg
   category: RA
