@@ -2332,8 +2332,8 @@ body {
     text-align: center;
   }
   .image-text-block .image {
-    max-width: 75%;
-    width: 75%;
+    max-width: 300px;
+    width: 90%;
   }
   .image-text-block .text {
     text-align: center;
