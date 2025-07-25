@@ -2040,7 +2040,7 @@ body {
   background-size: 120% auto;
 }
 .hero-area.scrolled {
-  background-image: url("/assets/gallery/index.webp");
+  background-image: url("/assets/gallery/index_1.webp");
 }
 .hero-area.scrolled::before {
   opacity: 0;
@@ -2141,7 +2141,7 @@ body {
 
 #vanta-bg {
   position: fixed;
-  background-color: rgba(43, 69, 122, 0.7333333333);
+  background-color: #335391;
   top: 0;
   left: 0;
   width: 100%;
