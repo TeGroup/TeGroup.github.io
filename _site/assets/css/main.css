@@ -2022,7 +2022,7 @@ body {
 }
 .hero-area {
   aspect-ratio: 5/2;
-  background-image: url("/assets/images/bak1.jpg");
+  background-image: url("/assets/images/bak1.webp");
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -2040,7 +2040,7 @@ body {
   background-size: 120% auto;
 }
 .hero-area.scrolled {
-  background-image: url("/assets/gallery/index.jpg");
+  background-image: url("/assets/gallery/index.webp");
 }
 .hero-area.scrolled::before {
   opacity: 0;
@@ -2141,7 +2141,7 @@ body {
 
 #vanta-bg {
   position: fixed;
-  background-color: rgba(43, 69, 122, 0.4039215686);
+  background-color: rgba(43, 69, 122, 0.7333333333);
   top: 0;
   left: 0;
   width: 100%;
