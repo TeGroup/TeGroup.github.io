@@ -154,7 +154,7 @@
 
 #vanta-bg {
   position: fixed;
-  background-color: #2b457aa3;
+  background-color: #2b457a67;
   top: 0;
   left: 0;
   width: 100%;
@@ -363,6 +363,7 @@
     text-align: center;
 
     .image {
+      max-width: 75%;
       width: 75%;
     }
 
