@@ -1901,8 +1901,10 @@ input[type=submit],
   .bar-container {
     width: 100%;
   }
+  .bar-container #committee-bar {
+    font-size: 1.2em;
+  }
 }
-
 .people-list {
   width: 90%;
   max-width: 880px;
@@ -2297,9 +2299,9 @@ body {
 .image-text-block {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   margin: 1.5rem auto;
-  max-width: 1000px;
+  max-width: 900px;
 }
 .image-text-block .image {
   flex: 1.5;
@@ -2400,6 +2402,7 @@ body {
 @media (max-width: 768px) {
   .text-box {
     width: 95%;
+    padding: 0.4rem 0.2rem 0.4rem 0.2rem;
   }
 }
 

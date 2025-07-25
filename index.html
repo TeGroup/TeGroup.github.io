@@ -9,7 +9,14 @@ layout: default
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/main.css">
-  
+  <style>
+    #index-li::marker {
+      color: wheat;
+    }
+    #index-li {
+      color: wheat
+    }
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 
@@ -23,7 +30,7 @@ layout: default
     </div>
   </section>
 
-  <div class="index-content" style="max-width: 1100px;">
+  <div class="index-content" style="max-width: 1000px;">
     <div class="image-text-block">
       <img src="/assets/avatars/ningningding_bio.jpg" alt="example" class="image">
       <div class="text", style="text-align: center;">
@@ -45,24 +52,24 @@ layout: default
   </div>
 
 
-      <div class="page-content" style="max-width: 1100px;">
-        <div class="text-box">
+      <div class="page-content" style="max-width: 1000px; background: rgba(25, 57, 127, 0.8); ">
+        <div class="text-box" style="color: wheat;">
             I am a Tenure-Track Assistant Professor in the Data Science and Analytics Thrust and the Internet of Things Thrust, Information Hub, Hong Kong University of Science and Technology (Guangzhou). 
             I also hold an affiliated position at the Hong Kong University of Science and Technology (Clear Water Bay). 
             <br><br>
             I received my PhD from The Chinese University of Hong Kong, Hong Kong SAR, China, advised by Prof. Jianwei Huang. 
             Before joining HKUST-GZ, I was a Postdoctoral Scholar at Northwestern University, Evanston, USA, advised by Prof. Randall Berry and Prof. Ermin Wei.
             <br><br>
-            I am actively looking for self-motivated PhD students (Spring/Fall 2026) to join our lab <a href="{{'/oppotunity'|relative_url}}">[Details]</a>. 
+            I am actively looking for self-motivated PhD students (Spring/Fall 2026) to join our lab <a href="{{'/oppotunity'|relative_url}}" style="color: #cfa827;">[Details]</a>. 
             If you are interested, please email me your CV and all transcripts!
         </div>
         <div class="text-box">
-            <strong>Research Interests:</strong>
+            <strong style="color: wheat;">Research Interests:</strong>
             <ul class="openning-list">
-                <li><strong style="color: #000;">Artificial intelligence</strong>: federated learning, machine
+                <li id="index-li"><strong>Artificial intelligence</strong>: federated learning, machine
                     unlearning, multi-agent coordination and game.</li>
-                <li><strong style="color: #000;">Network system</strong>: Internet of Things (IoT).</li>
-                <li><strong style="color: #000;">Network economics</strong>: data trading, mechanism design.</li>
+                <li id="index-li" ><strong>Network system</strong>: Internet of Things (IoT).</li>
+                <li id="index-li" ><strong>Network economics</strong>: data trading, mechanism design.</li>
             </ul>
         </div>
 
