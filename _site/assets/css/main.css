@@ -2141,6 +2141,7 @@ body {
 
 #vanta-bg {
   position: fixed;
+  background-color: #2b457a;
   top: 0;
   left: 0;
   width: 100%;
@@ -2331,8 +2332,7 @@ body {
     text-align: center;
   }
   .image-text-block .image {
-    max-width: 100%;
-    width: 80%;
+    width: 70%;
   }
   .image-text-block .text {
     text-align: center;
